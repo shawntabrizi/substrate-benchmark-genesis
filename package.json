@@ -1,0 +1,17 @@
+{
+  "name": "substrate-benchmark-genesis",
+  "version": "1.0.0",
+  "description": "Create a benchmark chain specification.",
+  "main": "index.js",
+  "scripts": {
+    "metadata": "node ./js/get_metadata.js",
+    "genesis": "node ./js/create_genesis.js"
+  },
+  "repository": "https://github.com/shawntabrizi/substrate-benchmark-genesis",
+  "author": "Shawn Tabrizi <shawntabrizi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@polkadot/api": "^1.6.2",
+    "@polkadot/util-crypto": "^2.6.2"
+  }
+}
