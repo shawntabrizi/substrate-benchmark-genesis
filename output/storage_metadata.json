@@ -11,7 +11,7 @@
 			}
 		},
 		"prefix": "0x26aa394eea5630e07c48ae0c9558cef7b99d880ec681799c0cf30e8886371da9",
-		"generate": 1
+		"generate": 100000
 	},
 	{
 		"module": "system",
@@ -25,7 +25,7 @@
 			}
 		},
 		"prefix": "0x26aa394eea5630e07c48ae0c9558cef7a44704b568d21667356a5a050c118746",
-		"generate": 1
+		"generate": 256
 	},
 	{
 		"module": "system",
@@ -39,7 +39,7 @@
 			}
 		},
 		"prefix": "0x26aa394eea5630e07c48ae0c9558cef7df1daeb8986837f21cc5d17596bb78d1",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "system",
@@ -53,7 +53,7 @@
 			}
 		},
 		"prefix": "0x26aa394eea5630e07c48ae0c9558cef7bb94e1c21adab714983cf06622e1de76",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "babe",
@@ -67,7 +67,7 @@
 			}
 		},
 		"prefix": "0x1cb6f36e027abb2091cfb5110ab5087fb9093659d7a856809757134d2bc86e62",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "indices",
@@ -81,7 +81,7 @@
 			}
 		},
 		"prefix": "0x1a736d37504c2e3fb73dad160c55b2918ee7418a6531173d60d1f6a82d8f4d51",
-		"generate": 1
+		"generate": 5000
 	},
 	{
 		"module": "balances",
@@ -95,7 +95,7 @@
 			}
 		},
 		"prefix": "0xc2261276cc9d1f8598ea4b6a74b15c2fb99d880ec681799c0cf30e8886371da9",
-		"generate": 1
+		"generate": 100000
 	},
 	{
 		"module": "balances",
@@ -109,7 +109,7 @@
 			}
 		},
 		"prefix": "0xc2261276cc9d1f8598ea4b6a74b15c2f218f26c73add634897550b4003b26bc6",
-		"generate": 1
+		"generate": 10000
 	},
 	{
 		"module": "staking",
@@ -123,7 +123,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedca3ed14b45ed20d054f05e37e2542cfe70",
-		"generate": 1
+		"generate": 20000
 	},
 	{
 		"module": "staking",
@@ -137,7 +137,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedca422adb579f1dbf4f3886c5cfa3bb8cc4",
-		"generate": 1
+		"generate": 20000
 	},
 	{
 		"module": "staking",
@@ -151,7 +151,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedca9220e172bed316605f73f1ff7b4ade98",
-		"generate": 1
+		"generate": 20000
 	},
 	{
 		"module": "staking",
@@ -165,7 +165,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedca6a93112633bb3354e67952fcdd740cd5",
-		"generate": 1
+		"generate": 1000
 	},
 	{
 		"module": "staking",
@@ -179,7 +179,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedca56ef6227cecb2f07274cb0572d8fa4c2",
-		"generate": 1
+		"generate": 20000
 	},
 	{
 		"module": "staking",
@@ -193,7 +193,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedcaad811cd65a470ddc5f1d628ff0550982",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "staking",
@@ -208,7 +208,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedca8bde0a0ea8864605e3b68ed9cb2da01b",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "staking",
@@ -223,7 +223,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedca42982b9d6c7acc99faa9094c912372c2",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "staking",
@@ -238,7 +238,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedca682db92dde20a10d96d00ff0e9e221c0",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "staking",
@@ -252,7 +252,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedca7e6ed2ee507c7b4441d59e4ded44b8a2",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "staking",
@@ -266,7 +266,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedca80cc6574281671b299c1727d7ac68cab",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "staking",
@@ -280,7 +280,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedcaa141c4fe67c2d11f4a10c6aca7a79a04",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "staking",
@@ -294,7 +294,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedca042824170a5db4381fe3395039cabd24",
-		"generate": 1
+		"generate": 20
 	},
 	{
 		"module": "staking",
@@ -309,7 +309,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedcaad6e15ee7bfd5d55eba1012487d3af54",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "staking",
@@ -324,7 +324,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedca815008e8210b6d6cf701e22e5bf27141",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "staking",
@@ -338,7 +338,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedcaab6a212bc08a5603828f33f90ec4a139",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "staking",
@@ -352,7 +352,7 @@
 			}
 		},
 		"prefix": "0x5f3e4907f716ac89b6347d15ececedcae62f6f797ebe9138dfced942977fea50",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "offences",
@@ -366,7 +366,7 @@
 			}
 		},
 		"prefix": "0xd5c41b52a371aa36c9254ce34324f2a5b262e9238fa402540c250bc3f5d6188d",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "offences",
@@ -381,7 +381,7 @@
 			}
 		},
 		"prefix": "0xd5c41b52a371aa36c9254ce34324f2a560dc8ef000cdbdc859dd352229ce16fb",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "offences",
@@ -395,7 +395,7 @@
 			}
 		},
 		"prefix": "0xd5c41b52a371aa36c9254ce34324f2a53589c0dac50da6fb3a3611eb32bcd27e",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "session",
@@ -409,7 +409,7 @@
 			}
 		},
 		"prefix": "0xcec5070d609dd3497f72bde07fc96ba04c014e6bf8b8c2c011e7290b85696bb3",
-		"generate": 1
+		"generate": 20000
 	},
 	{
 		"module": "session",
@@ -423,7 +423,7 @@
 			}
 		},
 		"prefix": "0xcec5070d609dd3497f72bde07fc96ba0726380404683fc89e8233450c8aa1950",
-		"generate": 1
+		"generate": 100000
 	},
 	{
 		"module": "grandpa",
@@ -437,7 +437,7 @@
 			}
 		},
 		"prefix": "0x2371e21684d2fae99bcb4d579242f74ad47cb8f5328af743ddfb361e7180e7fc",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "imOnline",
@@ -452,7 +452,7 @@
 			}
 		},
 		"prefix": "0x2b06af9719ac64d755623cda8ddd9b94cc5a1aa6e3716372f36ef103b7e3ae67",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "imOnline",
@@ -467,7 +467,7 @@
 			}
 		},
 		"prefix": "0x2b06af9719ac64d755623cda8ddd9b94b1c371ded9e9c565e89ba783c4d5f5f9",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "democracy",
@@ -481,7 +481,7 @@
 			}
 		},
 		"prefix": "0xf2794c22e353e9a839f12faab03a911bf68967d635641a7087e53f2bff1ecad3",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "democracy",
@@ -495,7 +495,7 @@
 			}
 		},
 		"prefix": "0xf2794c22e353e9a839f12faab03a911b255521173d2e7e678ffbf1e6bb8a6257",
-		"generate": 1
+		"generate": 1000
 	},
 	{
 		"module": "democracy",
@@ -509,25 +509,11 @@
 			}
 		},
 		"prefix": "0xf2794c22e353e9a839f12faab03a911bb9e0c7dac4238b700a83735192cb921c",
-		"generate": 1
+		"generate": 4
 	},
 	{
 		"module": "democracy",
-		"storage": "votersFor",
-		"type": {
-			"Map": {
-				"hasher": "Blake2_256",
-				"key": "ReferendumIndex",
-				"value": "Vec<AccountId>",
-				"linked": false
-			}
-		},
-		"prefix": "0xf2794c22e353e9a839f12faab03a911b68dea82502521b3daa51008b68692b1b",
-		"generate": 1
-	},
-	{
-		"module": "democracy",
-		"storage": "voteOf",
+		"storage": "votingOf",
 		"type": {
 			"Map": {
 				"hasher": "Blake2_256",
@@ -537,7 +523,7 @@
 			}
 		},
 		"prefix": "0xf2794c22e353e9a839f12faab03a911b02a7afbcd5cd4ad2c68bbc63279ae52e",
-		"generate": 1
+		"generate": 50000
 	},
 	{
 		"module": "democracy",
@@ -551,7 +537,7 @@
 			}
 		},
 		"prefix": "0xf2794c22e353e9a839f12faab03a911b1809d78346727a0ef58c0fa03bafa323",
-		"generate": 1
+		"generate": 2000
 	},
 	{
 		"module": "democracy",
@@ -565,7 +551,7 @@
 			}
 		},
 		"prefix": "0xf2794c22e353e9a839f12faab03a911bc809e5baae97c181b47cc95a021f3e48",
-		"generate": 1
+		"generate": 1000
 	},
 	{
 		"module": "democracy",
@@ -579,7 +565,7 @@
 			}
 		},
 		"prefix": "0xf2794c22e353e9a839f12faab03a911b218f26c73add634897550b4003b26bc6",
-		"generate": 1
+		"generate": 50000
 	},
 	{
 		"module": "democracy",
@@ -593,7 +579,7 @@
 			}
 		},
 		"prefix": "0xf2794c22e353e9a839f12faab03a911bb7612c99e31defd01cd5a28e9967e208",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "democracy",
@@ -607,7 +593,7 @@
 			}
 		},
 		"prefix": "0xf2794c22e353e9a839f12faab03a911be6e976fedc31c7b8cf73483554bd2be2",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "council",
@@ -621,7 +607,7 @@
 			}
 		},
 		"prefix": "0x11f3ba2e1cdd6d62f2ff9b5589e7ff81e9d6db8868a37d79930bc3f7f33950d1",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "council",
@@ -635,7 +621,7 @@
 			}
 		},
 		"prefix": "0x11f3ba2e1cdd6d62f2ff9b5589e7ff8171cd3068e6118bfb392b798317f63a89",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "technicalCommittee",
@@ -649,7 +635,7 @@
 			}
 		},
 		"prefix": "0x8985776095addd4789fccbce8ca77b23e9d6db8868a37d79930bc3f7f33950d1",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "technicalCommittee",
@@ -663,11 +649,11 @@
 			}
 		},
 		"prefix": "0x8985776095addd4789fccbce8ca77b2371cd3068e6118bfb392b798317f63a89",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "electionsPhragmen",
-		"storage": "votesOf",
+		"storage": "voting",
 		"type": {
 			"Map": {
 				"hasher": "Blake2_256",
@@ -677,21 +663,7 @@
 			}
 		},
 		"prefix": "0xe2e62dd81c48a88f73b6f6463555fd8e17e1902017f25928e40b071bcad95d1c",
-		"generate": 1
-	},
-	{
-		"module": "electionsPhragmen",
-		"storage": "stakeOf",
-		"type": {
-			"Map": {
-				"hasher": "Blake2_256",
-				"key": "AccountId",
-				"value": "BalanceOf",
-				"linked": false
-			}
-		},
-		"prefix": "0xe2e62dd81c48a88f73b6f6463555fd8ee7d0c42b25ce86cc50204950528688ea",
-		"generate": 1
+		"generate": 50000
 	},
 	{
 		"module": "treasury",
@@ -705,7 +677,7 @@
 			}
 		},
 		"prefix": "0x89d139e01a5eb2256f222e5fc5dbe6b388c2f7188c6fdd1dffae2fa0d171f440",
-		"generate": 1
+		"generate": 1000
 	},
 	{
 		"module": "treasury",
@@ -719,7 +691,7 @@
 			}
 		},
 		"prefix": "0x89d139e01a5eb2256f222e5fc5dbe6b32c5de123c468aef7f3ac2ab3a76f87ce",
-		"generate": 1
+		"generate": 1000
 	},
 	{
 		"module": "treasury",
@@ -733,7 +705,7 @@
 			}
 		},
 		"prefix": "0x89d139e01a5eb2256f222e5fc5dbe6b3d834d1db4313872258a93b9fc45d488b",
-		"generate": 1
+		"generate": 1000
 	},
 	{
 		"module": "claims",
@@ -747,7 +719,7 @@
 			}
 		},
 		"prefix": "0x9c5d795d0297be56027a4b2464e333979c5d795d0297be56027a4b2464e33397",
-		"generate": 1
+		"generate": 4000
 	},
 	{
 		"module": "claims",
@@ -761,7 +733,7 @@
 			}
 		},
 		"prefix": "0x9c5d795d0297be56027a4b2464e333975f27b51b5ec208ee9cb25b55d8728243",
-		"generate": 1
+		"generate": 4000
 	},
 	{
 		"module": "parachains",
@@ -775,7 +747,7 @@
 			}
 		},
 		"prefix": "0x0b76934f4cc08dee01012d059e1b83eeae01428f47990f2aefd44a980d4de151",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "parachains",
@@ -789,7 +761,7 @@
 			}
 		},
 		"prefix": "0x0b76934f4cc08dee01012d059e1b83ee1b3c252fcb29d88eff4f3de5de4476c3",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "parachains",
@@ -803,7 +775,7 @@
 			}
 		},
 		"prefix": "0x0b76934f4cc08dee01012d059e1b83eeb8c70d66fd452ea1e5830d5eb1b11491",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "parachains",
@@ -817,7 +789,7 @@
 			}
 		},
 		"prefix": "0x0b76934f4cc08dee01012d059e1b83eefad157e461d71fd4c1f936839a5f1f3e",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "attestations",
@@ -831,7 +803,7 @@
 			}
 		},
 		"prefix": "0xae394d879ddf7f99595bc0dd36e355b5deaf113faae552001507f41acaa8fd81",
-		"generate": 1
+		"generate":XXX1
 	},
 	{
 		"module": "attestations",
@@ -846,7 +818,7 @@
 			}
 		},
 		"prefix": "0xae394d879ddf7f99595bc0dd36e355b562fda5648314c851805dc675c024442d",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "slots",
@@ -860,7 +832,7 @@
 			}
 		},
 		"prefix": "0x6ac983d82528bf1595ab26438ae5b2cf74a614db8021c6bd0a028aafdf29dd08",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "slots",
@@ -874,7 +846,7 @@
 			}
 		},
 		"prefix": "0x6ac983d82528bf1595ab26438ae5b2cf4a20667fb1dc58cb22bcadfd9ab7f67c",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "slots",
@@ -888,7 +860,7 @@
 			}
 		},
 		"prefix": "0x6ac983d82528bf1595ab26438ae5b2cf49ddb7db82ffb65f362833fd1102d66d",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "slots",
@@ -902,7 +874,7 @@
 			}
 		},
 		"prefix": "0x6ac983d82528bf1595ab26438ae5b2cff866e860609824e29261664110e9ed0f",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "slots",
@@ -916,7 +888,7 @@
 			}
 		},
 		"prefix": "0x6ac983d82528bf1595ab26438ae5b2cf85fd5f5a4b16953f824376f27da292af",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "slots",
@@ -930,7 +902,7 @@
 			}
 		},
 		"prefix": "0x6ac983d82528bf1595ab26438ae5b2cff46fe7830e61b2961828a4bb22538341",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "registrar",
@@ -944,7 +916,7 @@
 			}
 		},
 		"prefix": "0x3fba98689ebed1138735e0e7a5a790ab050d60f58013e1a094de5dc9f24ea109",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "registrar",
@@ -958,7 +930,7 @@
 			}
 		},
 		"prefix": "0x3fba98689ebed1138735e0e7a5a790abcd710b30bd2eab0352ddcc26417aa194",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "registrar",
@@ -972,7 +944,7 @@
 			}
 		},
 		"prefix": "0x3fba98689ebed1138735e0e7a5a790ab210ce0e0a66ab5951ed411b3902eddf0",
-		"generate": 1
+		"generate": XXX
 	},
 	{
 		"module": "utility",
@@ -987,7 +959,7 @@
 			}
 		},
 		"prefix": "0xd5e1a2fa16732ce6906189438c0a82c63cd15a3fd6e04e47bee3922dbfa92c8d",
-		"generate": 1
+		"generate": 5000
 	},
 	{
 		"module": "identity",
@@ -1001,7 +973,7 @@
 			}
 		},
 		"prefix": "0x5c0d1176a568c1f92944340dbfed9e9ccd7f37317cd20b61e9bd46fab8704714",
-		"generate": 1
+		"generate": 5000
 	},
 	{
 		"module": "identity",
@@ -1015,7 +987,7 @@
 			}
 		},
 		"prefix": "0x5c0d1176a568c1f92944340dbfed9e9c43a953ac082e08b6527ce262dbd4abf2",
-		"generate": 1
+		"generate": 20000
 	},
 	{
 		"module": "identity",
@@ -1029,7 +1001,7 @@
 			}
 		},
 		"prefix": "0x5c0d1176a568c1f92944340dbfed9e9c6ee5a0b09e7e9a96219dd66f0f74c37e",
-		"generate": 1
+		"generate": 5000
 	},
 	{
 		"module": "society",
@@ -1043,7 +1015,7 @@
 			}
 		},
 		"prefix": "0x426e15054d267946093858132eb537f1bbf9723cdae80db599c0e53c5a470cd2",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "society",
@@ -1057,7 +1029,7 @@
 			}
 		},
 		"prefix": "0x426e15054d267946093858132eb537f14961503206762969ef4828521ef92a35",
-		"generate": 1
+		"generate": 0
 	},
 	{
 		"module": "society",
@@ -1071,7 +1043,7 @@
 			}
 		},
 		"prefix": "0x426e15054d267946093858132eb537f105eef273131bee9ab1033b8db9e5ab8c",
-		"generate": 1
+		"generate": 10
 	},
 	{
 		"module": "society",
@@ -1085,7 +1057,7 @@
 			}
 		},
 		"prefix": "0x426e15054d267946093858132eb537f119f4459916c774a1c3287d8ac99e98b9",
-		"generate": 1
+		"generate": 150
 	},
 	{
 		"module": "society",
@@ -1099,7 +1071,7 @@
 			}
 		},
 		"prefix": "0x426e15054d267946093858132eb537f10da61bea5fc7de17ebdf361b9914e50b",
-		"generate": 1
+		"generate": 100
 	},
 	{
 		"module": "society",
@@ -1114,7 +1086,7 @@
 			}
 		},
 		"prefix": "0x426e15054d267946093858132eb537f1b4adc6a1ce4f7cc2e696ed0fd06bd01c",
-		"generate": 1
+		"generate": 150
 	},
 	{
 		"module": "society",
@@ -1128,7 +1100,7 @@
 			}
 		},
 		"prefix": "0x426e15054d267946093858132eb537f191ca57b0c4b20b29ae7e99d6201d680c",
-		"generate": 1
+		"generate": 150
 	},
 	{
 		"module": "recovery",
@@ -1142,7 +1114,7 @@
 			}
 		},
 		"prefix": "0xa2ce73642c549ae79c14f0a671cf45f9a3f57184ab60571b3be8a355d07be414",
-		"generate": 1
+		"generate": 5000
 	},
 	{
 		"module": "recovery",
@@ -1157,7 +1129,7 @@
 			}
 		},
 		"prefix": "0xa2ce73642c549ae79c14f0a671cf45f9dff9094d7baf1e2d9b2e3a4253b096f8",
-		"generate": 1
+		"generate": 100
 	},
 	{
 		"module": "recovery",
@@ -1171,7 +1143,7 @@
 			}
 		},
 		"prefix": "0xa2ce73642c549ae79c14f0a671cf45f91809d78346727a0ef58c0fa03bafa323",
-		"generate": 1
+		"generate": 100
 	},
 	{
 		"module": "vesting",
@@ -1185,6 +1157,6 @@
 			}
 		},
 		"prefix": "0x5f27b51b5ec208ee9cb25b55d87282435f27b51b5ec208ee9cb25b55d8728243",
-		"generate": 1
+		"generate": 4000
 	}
 ]
