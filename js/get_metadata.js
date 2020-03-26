@@ -56,7 +56,7 @@ async function main() {
 // * stakers(20,000)
 // * validators(1,000),
 // * voters(50, 000)
-fn getGenerate(module, storage) {
+function getGenerate(module, storage) {
 	let sale_buyers = 4000;
 	let active_users = 5000;
 	let accounts = 100000;
