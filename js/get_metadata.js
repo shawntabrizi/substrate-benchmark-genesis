@@ -3,10 +3,12 @@ var { ApiPromise, WsProvider } = require('@polkadot/api');
 // Main function which needs to run at start
 async function main() {
 	// Substrate node we are connected to and listening to remarks
-	//const provider = new WsProvider('ws://localhost:9944');
-	const provider = new WsProvider('wss://kusama-rpc.polkadot.io/');
+	const provider = new WsProvider('ws://localhost:9944', false);
+	//const provider = new WsProvider('wss://kusama-rpc.polkadot.io/');
+	provider.connect();
 
 	const api = await ApiPromise.create({ provider });
+
 
 	// Get general information about the node we are connected to
 	const [chain, nodeName, nodeVersion] = await Promise.all([
@@ -19,6 +21,8 @@ async function main() {
 	);
 
 	let output = [];
+
+	let count = 0;
 
 	for (module in api.query) {
 		if (module == "substrate") { continue; }
@@ -40,12 +44,17 @@ async function main() {
 					"prefix": query.keyPrefix(),
 					"generate": generate
 				})
+
+				count += generate;
 			}
 		}
 	}
 
+	console.log("Final Count: ", count)
 	const fs = require('fs')
 	fs.writeFileSync('./output/storage_metadata.json', JSON.stringify(output))
+
+	provider.disconnect()
 }
 
 // From Gav PR
@@ -76,6 +85,10 @@ function getGenerate(module, storage) {
 
 	if (module == "system" && storage == "blockHash") {
 		return 256
+	}
+
+	if (module == "babe" && storage == "underConstruction") {
+		return 2000
 	}
 
 	if (module == "indices" && storage == "accounts") {
@@ -150,6 +163,10 @@ function getGenerate(module, storage) {
 		return staking_bonding_duration
 	}
 
+	if (module == "offences" && storage == "reports") {
+		return 50
+	}
+
 	if (module == "session" && storage == "nextKeys") {
 		return stakers
 	}
@@ -170,6 +187,18 @@ function getGenerate(module, storage) {
 		return voters;
 	}
 
+	if (module == "democracy" && storage == "preimages") {
+		return 10;
+	}
+
+	if (module == "democracy" && storage == "blacklist") {
+		return 100;
+	}
+
+	if (module == "democracy" && storage == "cancellations") {
+		return 100;
+	}
+
 	if (module == "democracy" && storage == "proxy") {
 		return (voters / 25);
 	}
@@ -183,6 +212,10 @@ function getGenerate(module, storage) {
 	}
 
 	if (module == "electionsPhragmen" && storage == "votesOf") {
+		return voters;
+	}
+
+	if (module == "electionsPhragmen" && storage == "voting") {
 		return voters;
 	}
 
@@ -243,6 +276,10 @@ function getGenerate(module, storage) {
 	}
 
 	if (module == "slots" && storage == "offboarding") {
+		return parachains;
+	}
+
+	if (module == "slots" && storage == "onboardQueue") {
 		return parachains;
 	}
 
@@ -308,6 +345,22 @@ function getGenerate(module, storage) {
 
 	if (module == "vesting" && storage == "vesting") {
 		return sale_buyers;
+	}
+
+	if (module == "council" && storage == "proposalOf") {
+		return 10;
+	}
+
+	if (module == "council" && storage == "voting") {
+		return 30;
+	}
+
+	if (module == "technicalCommittee" && storage == "proposalOf") {
+		return 10;
+	}
+
+	if (module == "technicalCommittee" && storage == "voting") {
+		return 30;
 	}
 
 	return 0
