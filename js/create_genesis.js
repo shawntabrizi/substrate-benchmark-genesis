@@ -18,7 +18,7 @@ function main() {
 				let key = storage.prefix;
 				console.log("Prefix   : ", key)
 				let [suffix, value] = simple_fake_suffix_and_value(i);
-				key += suffix;
+				key += suffix.substr(2);
 				console.log("Final Key: ", key)
 				content.genesis.raw.top[key] = value;
 			}
@@ -30,13 +30,13 @@ function main() {
 }
 
 function simple_fake_suffix_and_value(index) {
-	let suffix = xxhashAsHex(index.toString(), 128).substr(2);
+	let suffix = xxhashAsHex(index.toString(), 128);
 	let value = suffix;
 	return [suffix, value]
 }
 
 function real_account_suffix_and_value(index) {
-	let suffix = ""
+	let suffix = "0x"
 	let addressBytes = deriveHard(index.toString())
 	//console.log("Address Bytes: ", addressBytes)
 	let addressString = encodeAddress(addressBytes)
