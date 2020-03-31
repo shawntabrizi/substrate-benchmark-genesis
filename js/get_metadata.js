@@ -20,6 +20,20 @@ async function main() {
 		`You are connected to chain ${chain} using ${nodeName} v${nodeVersion}`
 	);
 
+	var args = process.argv;
+	let option = args[2];
+	let generateWith;
+	switch(option) {
+		case "polkadot":
+			generateWith = generatePolkadot;
+			break;
+		case "accounts":
+			generateWith = generateAccounts;
+			break;
+		default:
+			generateWith = generateZero;
+	}
+
 	let output = [];
 
 	let count = 0;
@@ -36,7 +50,7 @@ async function main() {
 
 			} catch {
 				console.log(module, storage, query.keyPrefix())
-				let generate = generatePolkadot(module, storage)
+				let generate = generateWith(module, storage);
 				output.push({
 					"module": module,
 					"storage": storage,
@@ -52,9 +66,26 @@ async function main() {
 
 	console.log("Final Count: ", count)
 	const fs = require('fs')
-	fs.writeFileSync('./output/storage_metadata.json', JSON.stringify(output, null, '  '))
+	fs.writeFileSync(
+		('./output/storage-metadata-' + nodeName + '-' + chain + '-' + option + '.json').toLowerCase().replace(/\s/g, '-'),
+		JSON.stringify(output, null, '  ')
+	)
 
 	provider.disconnect()
+}
+
+function generateZero(module, storage) {
+	return 0;
+}
+
+function generateAccounts(module, storage) {
+	let accounts = 10000;
+
+	if (module == "system" && storage == "account") {
+		return accounts
+	}
+
+	return 0;
 }
 
 // From Gav PR
