@@ -36,7 +36,7 @@ async function main() {
 
 			} catch {
 				console.log(module, storage, query.keyPrefix())
-				let generate = getGenerate(module, storage)
+				let generate = generatePolkadot(module, storage)
 				output.push({
 					"module": module,
 					"storage": storage,
@@ -52,7 +52,7 @@ async function main() {
 
 	console.log("Final Count: ", count)
 	const fs = require('fs')
-	fs.writeFileSync('./output/storage_metadata.json', JSON.stringify(output))
+	fs.writeFileSync('./output/storage_metadata.json', JSON.stringify(output, null, '  '))
 
 	provider.disconnect()
 }
@@ -65,7 +65,7 @@ async function main() {
 // * stakers(20,000)
 // * validators(1,000),
 // * voters(50, 000)
-function getGenerate(module, storage) {
+function generatePolkadot(module, storage) {
 	let sale_buyers = 4000;
 	let active_users = 5000;
 	let accounts = 100000;
@@ -363,6 +363,7 @@ function getGenerate(module, storage) {
 		return 30;
 	}
 
+	console.log("No match for: ")
 	return 0
 }
 

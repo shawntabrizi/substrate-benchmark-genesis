@@ -11,16 +11,20 @@ async function main() {
 
 	await cryptoWaitReady();
 
-
 	const fs = require('fs');
-	// This gets the filename from commandline
-	const filename = args[2];
-	const content = require('../input/' + filename + '.json');
-	let storageMetadataFilename = args[3];
-	if (!storageMetadataFilename) {
-		storageMetadataFilename = "storage_metadata"
+	const path = require('path');
+
+	// This gets the file path from commandline
+	const chainSpecPath = path.join(__dirname, "..", args[2]);
+	const content = require(chainSpecPath);
+	const filename = path.basename(chainSpecPath, '.json');
+	let storageMetadataPath = path.join(__dirname, "..", args[3]);
+	let storageMetadata;
+	if (storageMetadataPath) {
+		storageMetadata = require(storageMetadataPath);
+	} else {
+		storageMetadata = require('../output/storage_metadata.json');
 	}
-	const storageMetadata = require('../output/' + storageMetadataFilename + '.json');
 
 	if (content.genesis.raw.top) {
 		for (storage of storageMetadata) {
@@ -36,7 +40,7 @@ async function main() {
 	}
 
 
-	fs.writeFileSync('./output/' + filename + '-final.json', JSON.stringify(content));
+	fs.writeFileSync('./output/' + filename + '-final.json', JSON.stringify(content, null, '  '));
 }
 
 function simple_fake_suffix_and_value(index) {

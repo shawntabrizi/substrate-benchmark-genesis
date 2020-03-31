@@ -3,9 +3,12 @@ async function main() {
 	var args = process.argv;
 
 	const fs = require('fs');
+	const path = require('path');
+
 	// This gets the filename from commandline
-	const filename = args[2];
-	const content = require('../sort/' + filename + '.json');
+	let chainSpecPath = path.join(__dirname, "..", args[2]);
+	const filename = path.basename(chainSpecPath, '.json');
+	const content = require(chainSpecPath);
 
 	let unordered = content.genesis.raw.top;
 
@@ -16,7 +19,7 @@ async function main() {
 
 	content.genesis.raw.top = ordered;
 
-	fs.writeFileSync('./sort/' + filename + '-sorted.json', JSON.stringify(content));
+	fs.writeFileSync('./output/' + filename + '-sorted.json', JSON.stringify(content, null, '  '));
 }
 
 main();
