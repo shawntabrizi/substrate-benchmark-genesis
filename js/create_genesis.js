@@ -16,7 +16,7 @@ async function main() {
 	// This gets the filename from commandline
 	const filename = args[2];
 	const content = require('../input/' + filename + '.json');
-	const storageMetadataFilename = args[3];
+	let storageMetadataFilename = args[3];
 	if (!storageMetadataFilename) {
 		storageMetadataFilename = "storage_metadata"
 	}
@@ -27,7 +27,7 @@ async function main() {
 			for (let i = 0; i < storage.generate; i++) {
 				let key = storage.prefix;
 				console.log("Prefix   : ", key)
-				let [suffix, value] = real_account_suffix_and_value(i);
+				let [suffix, value] = simple_fake_suffix_and_value(i);
 				key += suffix.substr(2);
 				console.log("Final Key: ", key)
 				content.genesis.raw.top[key] = value;
