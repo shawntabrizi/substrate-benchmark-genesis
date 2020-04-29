@@ -1,0 +1,1232 @@
+[
+  {
+    "module": "system",
+    "storage": "account",
+    "type": {
+      "Map": {
+        "hasher": "Blake2_128Concat",
+        "key": "AccountId",
+        "value": "AccountInfo",
+        "linked": false
+      }
+    },
+    "prefix": "0x26aa394eea5630e07c48ae0c9558cef7b99d880ec681799c0cf30e8886371da9",
+    "generate": 100000
+  },
+  {
+    "module": "system",
+    "storage": "blockHash",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "BlockNumber",
+        "value": "Hash",
+        "linked": false
+      }
+    },
+    "prefix": "0x26aa394eea5630e07c48ae0c9558cef7a44704b568d21667356a5a050c118746",
+    "generate": 256
+  },
+  {
+    "module": "system",
+    "storage": "extrinsicData",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "u32",
+        "value": "Bytes",
+        "linked": false
+      }
+    },
+    "prefix": "0x26aa394eea5630e07c48ae0c9558cef7df1daeb8986837f21cc5d17596bb78d1",
+    "generate": 0
+  },
+  {
+    "module": "system",
+    "storage": "eventTopics",
+    "type": {
+      "Map": {
+        "hasher": "Blake2_128Concat",
+        "key": "Hash",
+        "value": "Vec<(BlockNumber,EventIndex)>",
+        "linked": false
+      }
+    },
+    "prefix": "0x26aa394eea5630e07c48ae0c9558cef7bb94e1c21adab714983cf06622e1de76",
+    "generate": 0
+  },
+  {
+    "module": "babe",
+    "storage": "underConstruction",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "u32",
+        "value": "Vec<RawVRFOutput>",
+        "linked": false
+      }
+    },
+    "prefix": "0x1cb6f36e027abb2091cfb5110ab5087fb9093659d7a856809757134d2bc86e62",
+    "generate": 2000
+  },
+  {
+    "module": "indices",
+    "storage": "accounts",
+    "type": {
+      "Map": {
+        "hasher": "Blake2_128Concat",
+        "key": "AccountIndex",
+        "value": "(AccountId,BalanceOf)",
+        "linked": false
+      }
+    },
+    "prefix": "0x1a736d37504c2e3fb73dad160c55b2918ee7418a6531173d60d1f6a82d8f4d51",
+    "generate": 5000
+  },
+  {
+    "module": "balances",
+    "storage": "account",
+    "type": {
+      "Map": {
+        "hasher": "Blake2_128Concat",
+        "key": "AccountId",
+        "value": "AccountData",
+        "linked": false
+      }
+    },
+    "prefix": "0xc2261276cc9d1f8598ea4b6a74b15c2fb99d880ec681799c0cf30e8886371da9",
+    "generate": 100000
+  },
+  {
+    "module": "balances",
+    "storage": "locks",
+    "type": {
+      "Map": {
+        "hasher": "Blake2_128Concat",
+        "key": "AccountId",
+        "value": "Vec<BalanceLock>",
+        "linked": false
+      }
+    },
+    "prefix": "0xc2261276cc9d1f8598ea4b6a74b15c2f218f26c73add634897550b4003b26bc6",
+    "generate": 10000
+  },
+  {
+    "module": "staking",
+    "storage": "bonded",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "AccountId",
+        "linked": false
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedca3ed14b45ed20d054f05e37e2542cfe70",
+    "generate": 20000
+  },
+  {
+    "module": "staking",
+    "storage": "ledger",
+    "type": {
+      "Map": {
+        "hasher": "Blake2_128Concat",
+        "key": "AccountId",
+        "value": "StakingLedger",
+        "linked": false
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedca422adb579f1dbf4f3886c5cfa3bb8cc4",
+    "generate": 20000
+  },
+  {
+    "module": "staking",
+    "storage": "payee",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "RewardDestination",
+        "linked": false
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedca9220e172bed316605f73f1ff7b4ade98",
+    "generate": 20000
+  },
+  {
+    "module": "staking",
+    "storage": "validators",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "ValidatorPrefs",
+        "linked": false
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedca88dcde934c658227ee1dfafcd6e16903",
+    "generate": 1000
+  },
+  {
+    "module": "staking",
+    "storage": "nominators",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "Nominations",
+        "linked": false
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedca9c6a637f62ae2af1c7e31eed7e96be04",
+    "generate": 20000
+  },
+  {
+    "module": "staking",
+    "storage": "erasStartSessionIndex",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "EraIndex",
+        "value": "SessionIndex",
+        "linked": false
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedcaad811cd65a470ddc5f1d628ff0550982",
+    "generate": 0
+  },
+  {
+    "module": "staking",
+    "storage": "erasStakers",
+    "type": {
+      "DoubleMap": {
+        "hasher": "Twox64Concat",
+        "key1": "EraIndex",
+        "key2": "AccountId",
+        "value": "Exposure",
+        "key2Hasher": "Twox64Concat"
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedca8bde0a0ea8864605e3b68ed9cb2da01b",
+    "generate": 84
+  },
+  {
+    "module": "staking",
+    "storage": "erasStakersClipped",
+    "type": {
+      "DoubleMap": {
+        "hasher": "Twox64Concat",
+        "key1": "EraIndex",
+        "key2": "AccountId",
+        "value": "Exposure",
+        "key2Hasher": "Twox64Concat"
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedca42982b9d6c7acc99faa9094c912372c2",
+    "generate": 84
+  },
+  {
+    "module": "staking",
+    "storage": "erasValidatorPrefs",
+    "type": {
+      "DoubleMap": {
+        "hasher": "Twox64Concat",
+        "key1": "EraIndex",
+        "key2": "AccountId",
+        "value": "ValidatorPrefs",
+        "key2Hasher": "Twox64Concat"
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedca682db92dde20a10d96d00ff0e9e221c0",
+    "generate": 84
+  },
+  {
+    "module": "staking",
+    "storage": "erasValidatorReward",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "EraIndex",
+        "value": "BalanceOf",
+        "linked": false
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedca7e6ed2ee507c7b4441d59e4ded44b8a2",
+    "generate": 84
+  },
+  {
+    "module": "staking",
+    "storage": "erasRewardPoints",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "EraIndex",
+        "value": "EraRewardPoints",
+        "linked": false
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedca80cc6574281671b299c1727d7ac68cab",
+    "generate": 84
+  },
+  {
+    "module": "staking",
+    "storage": "erasTotalStake",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "EraIndex",
+        "value": "BalanceOf",
+        "linked": false
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedcaa141c4fe67c2d11f4a10c6aca7a79a04",
+    "generate": 84
+  },
+  {
+    "module": "staking",
+    "storage": "unappliedSlashes",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "EraIndex",
+        "value": "Vec<UnappliedSlash>",
+        "linked": false
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedca042824170a5db4381fe3395039cabd24",
+    "generate": 20
+  },
+  {
+    "module": "staking",
+    "storage": "validatorSlashInEra",
+    "type": {
+      "DoubleMap": {
+        "hasher": "Twox64Concat",
+        "key1": "EraIndex",
+        "key2": "AccountId",
+        "value": "(Perbill,BalanceOf)",
+        "key2Hasher": "Twox64Concat"
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedcaad6e15ee7bfd5d55eba1012487d3af54",
+    "generate": 28
+  },
+  {
+    "module": "staking",
+    "storage": "nominatorSlashInEra",
+    "type": {
+      "DoubleMap": {
+        "hasher": "Twox64Concat",
+        "key1": "EraIndex",
+        "key2": "AccountId",
+        "value": "BalanceOf",
+        "key2Hasher": "Twox64Concat"
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedca815008e8210b6d6cf701e22e5bf27141",
+    "generate": 28
+  },
+  {
+    "module": "staking",
+    "storage": "slashingSpans",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "SlashingSpans",
+        "linked": false
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedcaab6a212bc08a5603828f33f90ec4a139",
+    "generate": 0
+  },
+  {
+    "module": "staking",
+    "storage": "spanSlash",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "(AccountId,SpanIndex)",
+        "value": "SpanRecord",
+        "linked": false
+      }
+    },
+    "prefix": "0x5f3e4907f716ac89b6347d15ececedcae62f6f797ebe9138dfced942977fea50",
+    "generate": 0
+  },
+  {
+    "module": "offences",
+    "storage": "reports",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ReportIdOf",
+        "value": "OffenceDetails",
+        "linked": false
+      }
+    },
+    "prefix": "0xd5c41b52a371aa36c9254ce34324f2a5b262e9238fa402540c250bc3f5d6188d",
+    "generate": 50
+  },
+  {
+    "module": "offences",
+    "storage": "concurrentReportsIndex",
+    "type": {
+      "DoubleMap": {
+        "hasher": "Twox64Concat",
+        "key1": "Kind",
+        "key2": "OpaqueTimeSlot",
+        "value": "Vec<ReportIdOf>",
+        "key2Hasher": "Twox64Concat"
+      }
+    },
+    "prefix": "0xd5c41b52a371aa36c9254ce34324f2a560dc8ef000cdbdc859dd352229ce16fb",
+    "generate": 0
+  },
+  {
+    "module": "offences",
+    "storage": "reportsByKindIndex",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "Kind",
+        "value": "Bytes",
+        "linked": false
+      }
+    },
+    "prefix": "0xd5c41b52a371aa36c9254ce34324f2a53589c0dac50da6fb3a3611eb32bcd27e",
+    "generate": 0
+  },
+  {
+    "module": "session",
+    "storage": "nextKeys",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ValidatorId",
+        "value": "Keys",
+        "linked": false
+      }
+    },
+    "prefix": "0xcec5070d609dd3497f72bde07fc96ba04c014e6bf8b8c2c011e7290b85696bb3",
+    "generate": 20000
+  },
+  {
+    "module": "session",
+    "storage": "keyOwner",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "(KeyTypeId,Bytes)",
+        "value": "ValidatorId",
+        "linked": false
+      }
+    },
+    "prefix": "0xcec5070d609dd3497f72bde07fc96ba0726380404683fc89e8233450c8aa1950",
+    "generate": 100000
+  },
+  {
+    "module": "grandpa",
+    "storage": "setIdSession",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "SetId",
+        "value": "SessionIndex",
+        "linked": false
+      }
+    },
+    "prefix": "0x2371e21684d2fae99bcb4d579242f74ad47cb8f5328af743ddfb361e7180e7fc",
+    "generate": 0
+  },
+  {
+    "module": "imOnline",
+    "storage": "receivedHeartbeats",
+    "type": {
+      "DoubleMap": {
+        "hasher": "Twox64Concat",
+        "key1": "SessionIndex",
+        "key2": "AuthIndex",
+        "value": "Bytes",
+        "key2Hasher": "Twox64Concat"
+      }
+    },
+    "prefix": "0x2b06af9719ac64d755623cda8ddd9b94cc5a1aa6e3716372f36ef103b7e3ae67",
+    "generate": 0
+  },
+  {
+    "module": "imOnline",
+    "storage": "authoredBlocks",
+    "type": {
+      "DoubleMap": {
+        "hasher": "Twox64Concat",
+        "key1": "SessionIndex",
+        "key2": "ValidatorId",
+        "value": "u32",
+        "key2Hasher": "Twox64Concat"
+      }
+    },
+    "prefix": "0x2b06af9719ac64d755623cda8ddd9b94b1c371ded9e9c565e89ba783c4d5f5f9",
+    "generate": 0
+  },
+  {
+    "module": "democracy",
+    "storage": "depositOf",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "PropIndex",
+        "value": "(BalanceOf,Vec<AccountId>)",
+        "linked": false
+      }
+    },
+    "prefix": "0xf2794c22e353e9a839f12faab03a911b255521173d2e7e678ffbf1e6bb8a6257",
+    "generate": 1000
+  },
+  {
+    "module": "democracy",
+    "storage": "preimages",
+    "type": {
+      "Map": {
+        "hasher": "Identity",
+        "key": "Hash",
+        "value": "PreimageStatus",
+        "linked": false
+      }
+    },
+    "prefix": "0xf2794c22e353e9a839f12faab03a911bf68967d635641a7087e53f2bff1ecad3",
+    "generate": 10
+  },
+  {
+    "module": "democracy",
+    "storage": "referendumInfoOf",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ReferendumIndex",
+        "value": "ReferendumInfo",
+        "linked": false
+      }
+    },
+    "prefix": "0xf2794c22e353e9a839f12faab03a911bb9e0c7dac4238b700a83735192cb921c",
+    "generate": 4
+  },
+  {
+    "module": "democracy",
+    "storage": "votingOf",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "Voting",
+        "linked": false
+      }
+    },
+    "prefix": "0xf2794c22e353e9a839f12faab03a911be470c6afbbbc027eb288ade7595953c2",
+    "generate": 50000
+  },
+  {
+    "module": "democracy",
+    "storage": "proxy",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "ProxyState",
+        "linked": false
+      }
+    },
+    "prefix": "0xf2794c22e353e9a839f12faab03a911b1809d78346727a0ef58c0fa03bafa323",
+    "generate": 2000
+  },
+  {
+    "module": "democracy",
+    "storage": "locks",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "BlockNumber",
+        "linked": false
+      }
+    },
+    "prefix": "0xf2794c22e353e9a839f12faab03a911b218f26c73add634897550b4003b26bc6",
+    "generate": 50000
+  },
+  {
+    "module": "democracy",
+    "storage": "blacklist",
+    "type": {
+      "Map": {
+        "hasher": "Identity",
+        "key": "Hash",
+        "value": "(BlockNumber,Vec<AccountId>)",
+        "linked": false
+      }
+    },
+    "prefix": "0xf2794c22e353e9a839f12faab03a911bb7612c99e31defd01cd5a28e9967e208",
+    "generate": 100
+  },
+  {
+    "module": "democracy",
+    "storage": "cancellations",
+    "type": {
+      "Map": {
+        "hasher": "Identity",
+        "key": "Hash",
+        "value": "bool",
+        "linked": false
+      }
+    },
+    "prefix": "0xf2794c22e353e9a839f12faab03a911be6e976fedc31c7b8cf73483554bd2be2",
+    "generate": 100
+  },
+  {
+    "module": "council",
+    "storage": "proposalOf",
+    "type": {
+      "Map": {
+        "hasher": "Identity",
+        "key": "Hash",
+        "value": "Proposal",
+        "linked": false
+      }
+    },
+    "prefix": "0x11f3ba2e1cdd6d62f2ff9b5589e7ff81e9d6db8868a37d79930bc3f7f33950d1",
+    "generate": 10
+  },
+  {
+    "module": "council",
+    "storage": "voting",
+    "type": {
+      "Map": {
+        "hasher": "Identity",
+        "key": "Hash",
+        "value": "Votes",
+        "linked": false
+      }
+    },
+    "prefix": "0x11f3ba2e1cdd6d62f2ff9b5589e7ff8171cd3068e6118bfb392b798317f63a89",
+    "generate": 30
+  },
+  {
+    "module": "technicalCommittee",
+    "storage": "proposalOf",
+    "type": {
+      "Map": {
+        "hasher": "Identity",
+        "key": "Hash",
+        "value": "Proposal",
+        "linked": false
+      }
+    },
+    "prefix": "0x8985776095addd4789fccbce8ca77b23e9d6db8868a37d79930bc3f7f33950d1",
+    "generate": 10
+  },
+  {
+    "module": "technicalCommittee",
+    "storage": "voting",
+    "type": {
+      "Map": {
+        "hasher": "Identity",
+        "key": "Hash",
+        "value": "Votes",
+        "linked": false
+      }
+    },
+    "prefix": "0x8985776095addd4789fccbce8ca77b2371cd3068e6118bfb392b798317f63a89",
+    "generate": 30
+  },
+  {
+    "module": "electionsPhragmen",
+    "storage": "voting",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "(BalanceOf,Vec<AccountId>)",
+        "linked": false
+      }
+    },
+    "prefix": "0xe2e62dd81c48a88f73b6f6463555fd8e71cd3068e6118bfb392b798317f63a89",
+    "generate": 50000
+  },
+  {
+    "module": "treasury",
+    "storage": "proposals",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ProposalIndex",
+        "value": "TreasuryProposal",
+        "linked": false
+      }
+    },
+    "prefix": "0x89d139e01a5eb2256f222e5fc5dbe6b388c2f7188c6fdd1dffae2fa0d171f440",
+    "generate": 1000
+  },
+  {
+    "module": "treasury",
+    "storage": "tips",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "Hash",
+        "value": "OpenTip",
+        "linked": false
+      }
+    },
+    "prefix": "0x89d139e01a5eb2256f222e5fc5dbe6b32c5de123c468aef7f3ac2ab3a76f87ce",
+    "generate": 1000
+  },
+  {
+    "module": "treasury",
+    "storage": "reasons",
+    "type": {
+      "Map": {
+        "hasher": "Identity",
+        "key": "Hash",
+        "value": "Bytes",
+        "linked": false
+      }
+    },
+    "prefix": "0x89d139e01a5eb2256f222e5fc5dbe6b3d834d1db4313872258a93b9fc45d488b",
+    "generate": 1000
+  },
+  {
+    "module": "claims",
+    "storage": "claims",
+    "type": {
+      "Map": {
+        "hasher": "Identity",
+        "key": "EthereumAddress",
+        "value": "BalanceOf",
+        "linked": false
+      }
+    },
+    "prefix": "0x9c5d795d0297be56027a4b2464e333979c5d795d0297be56027a4b2464e33397",
+    "generate": 4000
+  },
+  {
+    "module": "claims",
+    "storage": "vesting",
+    "type": {
+      "Map": {
+        "hasher": "Identity",
+        "key": "EthereumAddress",
+        "value": "(BalanceOf,BalanceOf,BlockNumber)",
+        "linked": false
+      }
+    },
+    "prefix": "0x9c5d795d0297be56027a4b2464e333975f27b51b5ec208ee9cb25b55d8728243",
+    "generate": 4000
+  },
+  {
+    "module": "parachains",
+    "storage": "code",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ParaId",
+        "value": "ValidationCode",
+        "linked": false
+      }
+    },
+    "prefix": "0x0b76934f4cc08dee01012d059e1b83eeae01428f47990f2aefd44a980d4de151",
+    "generate": 100
+  },
+  {
+    "module": "parachains",
+    "storage": "pastCodeMeta",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ParaId",
+        "value": "ParaPastCodeMeta",
+        "linked": false
+      }
+    },
+    "prefix": "0x0b76934f4cc08dee01012d059e1b83eef396cc48786b105ccef72bfd09aa14b5",
+    "generate": 0
+  },
+  {
+    "module": "parachains",
+    "storage": "pastCode",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "(ParaId,BlockNumber)",
+        "value": "ValidationCode",
+        "linked": false
+      }
+    },
+    "prefix": "0x0b76934f4cc08dee01012d059e1b83eeeaf4a7d02fa858b79762e1910da2f331",
+    "generate": 0
+  },
+  {
+    "module": "parachains",
+    "storage": "futureCodeUpgrades",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ParaId",
+        "value": "BlockNumber",
+        "linked": false
+      }
+    },
+    "prefix": "0x0b76934f4cc08dee01012d059e1b83ee40a2e3ef2d6b1b7b64ce36356e02087e",
+    "generate": 0
+  },
+  {
+    "module": "parachains",
+    "storage": "futureCode",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ParaId",
+        "value": "ValidationCode",
+        "linked": false
+      }
+    },
+    "prefix": "0x0b76934f4cc08dee01012d059e1b83ee6bdbda296e93de4b601e9202f371d409",
+    "generate": 0
+  },
+  {
+    "module": "parachains",
+    "storage": "heads",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ParaId",
+        "value": "HeadData",
+        "linked": false
+      }
+    },
+    "prefix": "0x0b76934f4cc08dee01012d059e1b83ee1b3c252fcb29d88eff4f3de5de4476c3",
+    "generate": 100
+  },
+  {
+    "module": "parachains",
+    "storage": "relayDispatchQueue",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ParaId",
+        "value": "Vec<UpwardMessage>",
+        "linked": false
+      }
+    },
+    "prefix": "0x0b76934f4cc08dee01012d059e1b83eeb8c70d66fd452ea1e5830d5eb1b11491",
+    "generate": 100
+  },
+  {
+    "module": "parachains",
+    "storage": "relayDispatchQueueSize",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ParaId",
+        "value": "(u32,u32)",
+        "linked": false
+      }
+    },
+    "prefix": "0x0b76934f4cc08dee01012d059e1b83eefad157e461d71fd4c1f936839a5f1f3e",
+    "generate": 100
+  },
+  {
+    "module": "attestations",
+    "storage": "recentParaBlocks",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "BlockNumber",
+        "value": "IncludedBlocks",
+        "linked": false
+      }
+    },
+    "prefix": "0xae394d879ddf7f99595bc0dd36e355b5deaf113faae552001507f41acaa8fd81",
+    "generate": 0
+  },
+  {
+    "module": "attestations",
+    "storage": "paraBlockAttestations",
+    "type": {
+      "DoubleMap": {
+        "hasher": "Twox64Concat",
+        "key1": "BlockNumber",
+        "key2": "Hash",
+        "value": "BlockAttestations",
+        "key2Hasher": "Identity"
+      }
+    },
+    "prefix": "0xae394d879ddf7f99595bc0dd36e355b562fda5648314c851805dc675c024442d",
+    "generate": 0
+  },
+  {
+    "module": "slots",
+    "storage": "deposits",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ParaId",
+        "value": "Vec<BalanceOf>",
+        "linked": false
+      }
+    },
+    "prefix": "0x6ac983d82528bf1595ab26438ae5b2cf74a614db8021c6bd0a028aafdf29dd08",
+    "generate": 100
+  },
+  {
+    "module": "slots",
+    "storage": "winning",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "BlockNumber",
+        "value": "WinningData",
+        "linked": false
+      }
+    },
+    "prefix": "0x6ac983d82528bf1595ab26438ae5b2cf4a20667fb1dc58cb22bcadfd9ab7f67c",
+    "generate": 100
+  },
+  {
+    "module": "slots",
+    "storage": "reservedAmounts",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "Bidder",
+        "value": "BalanceOf",
+        "linked": false
+      }
+    },
+    "prefix": "0x6ac983d82528bf1595ab26438ae5b2cf49ddb7db82ffb65f362833fd1102d66d",
+    "generate": 1000
+  },
+  {
+    "module": "slots",
+    "storage": "onboardQueue",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "LeasePeriodOf",
+        "value": "Vec<ParaId>",
+        "linked": false
+      }
+    },
+    "prefix": "0x6ac983d82528bf1595ab26438ae5b2cff866e860609824e29261664110e9ed0f",
+    "generate": 100
+  },
+  {
+    "module": "slots",
+    "storage": "onboarding",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ParaId",
+        "value": "(LeasePeriodOf,IncomingParachain)",
+        "linked": false
+      }
+    },
+    "prefix": "0x6ac983d82528bf1595ab26438ae5b2cf85fd5f5a4b16953f824376f27da292af",
+    "generate": 100
+  },
+  {
+    "module": "slots",
+    "storage": "offboarding",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ParaId",
+        "value": "AccountId",
+        "linked": false
+      }
+    },
+    "prefix": "0x6ac983d82528bf1595ab26438ae5b2cff46fe7830e61b2961828a4bb22538341",
+    "generate": 100
+  },
+  {
+    "module": "registrar",
+    "storage": "pendingSwap",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ParaId",
+        "value": "ParaId",
+        "linked": false
+      }
+    },
+    "prefix": "0x3fba98689ebed1138735e0e7a5a790ab050d60f58013e1a094de5dc9f24ea109",
+    "generate": 10
+  },
+  {
+    "module": "registrar",
+    "storage": "paras",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ParaId",
+        "value": "ParaInfo",
+        "linked": false
+      }
+    },
+    "prefix": "0x3fba98689ebed1138735e0e7a5a790abcd710b30bd2eab0352ddcc26417aa194",
+    "generate": 1100
+  },
+  {
+    "module": "registrar",
+    "storage": "debtors",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "ParaId",
+        "value": "AccountId",
+        "linked": false
+      }
+    },
+    "prefix": "0x3fba98689ebed1138735e0e7a5a790ab210ce0e0a66ab5951ed411b3902eddf0",
+    "generate": 1000
+  },
+  {
+    "module": "utility",
+    "storage": "multisigs",
+    "type": {
+      "DoubleMap": {
+        "hasher": "Twox64Concat",
+        "key1": "AccountId",
+        "key2": "[u8;32]",
+        "value": "Multisig",
+        "key2Hasher": "Blake2_128Concat"
+      }
+    },
+    "prefix": "0xd5e1a2fa16732ce6906189438c0a82c63cd15a3fd6e04e47bee3922dbfa92c8d",
+    "generate": 5000
+  },
+  {
+    "module": "identity",
+    "storage": "identityOf",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "Registration",
+        "linked": false
+      }
+    },
+    "prefix": "0x2aeddc77fe58c98d50bd37f1b90840f9cd7f37317cd20b61e9bd46fab8704714",
+    "generate": 5000
+  },
+  {
+    "module": "identity",
+    "storage": "superOf",
+    "type": {
+      "Map": {
+        "hasher": "Blake2_128Concat",
+        "key": "AccountId",
+        "value": "(AccountId,Data)",
+        "linked": false
+      }
+    },
+    "prefix": "0x2aeddc77fe58c98d50bd37f1b90840f943a953ac082e08b6527ce262dbd4abf2",
+    "generate": 20000
+  },
+  {
+    "module": "identity",
+    "storage": "subsOf",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "(BalanceOf,Vec<AccountId>)",
+        "linked": false
+      }
+    },
+    "prefix": "0x2aeddc77fe58c98d50bd37f1b90840f96ee5a0b09e7e9a96219dd66f0f74c37e",
+    "generate": 5000
+  },
+  {
+    "module": "society",
+    "storage": "suspendedCandidates",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "(BalanceOf,BidKind)",
+        "linked": false
+      }
+    },
+    "prefix": "0x426e15054d267946093858132eb537f1bbf9723cdae80db599c0e53c5a470cd2",
+    "generate": 0
+  },
+  {
+    "module": "society",
+    "storage": "suspendedMembers",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "bool",
+        "linked": false
+      }
+    },
+    "prefix": "0x426e15054d267946093858132eb537f14961503206762969ef4828521ef92a35",
+    "generate": 0
+  },
+  {
+    "module": "society",
+    "storage": "vouching",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "VouchingStatus",
+        "linked": false
+      }
+    },
+    "prefix": "0x426e15054d267946093858132eb537f105eef273131bee9ab1033b8db9e5ab8c",
+    "generate": 10
+  },
+  {
+    "module": "society",
+    "storage": "payouts",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "Vec<(BlockNumber,BalanceOf)>",
+        "linked": false
+      }
+    },
+    "prefix": "0x426e15054d267946093858132eb537f119f4459916c774a1c3287d8ac99e98b9",
+    "generate": 150
+  },
+  {
+    "module": "society",
+    "storage": "strikes",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "StrikeCount",
+        "linked": false
+      }
+    },
+    "prefix": "0x426e15054d267946093858132eb537f10da61bea5fc7de17ebdf361b9914e50b",
+    "generate": 100
+  },
+  {
+    "module": "society",
+    "storage": "votes",
+    "type": {
+      "DoubleMap": {
+        "hasher": "Twox64Concat",
+        "key1": "AccountId",
+        "key2": "AccountId",
+        "value": "SocietyVote",
+        "key2Hasher": "Twox64Concat"
+      }
+    },
+    "prefix": "0x426e15054d267946093858132eb537f1b4adc6a1ce4f7cc2e696ed0fd06bd01c",
+    "generate": 150
+  },
+  {
+    "module": "society",
+    "storage": "defenderVotes",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "SocietyVote",
+        "linked": false
+      }
+    },
+    "prefix": "0x426e15054d267946093858132eb537f191ca57b0c4b20b29ae7e99d6201d680c",
+    "generate": 150
+  },
+  {
+    "module": "recovery",
+    "storage": "recoverable",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "AccountId",
+        "value": "RecoveryConfig",
+        "linked": false
+      }
+    },
+    "prefix": "0xa2ce73642c549ae79c14f0a671cf45f9a3f57184ab60571b3be8a355d07be414",
+    "generate": 5000
+  },
+  {
+    "module": "recovery",
+    "storage": "activeRecoveries",
+    "type": {
+      "DoubleMap": {
+        "hasher": "Twox64Concat",
+        "key1": "AccountId",
+        "key2": "AccountId",
+        "value": "ActiveRecovery",
+        "key2Hasher": "Twox64Concat"
+      }
+    },
+    "prefix": "0xa2ce73642c549ae79c14f0a671cf45f9dff9094d7baf1e2d9b2e3a4253b096f8",
+    "generate": 100
+  },
+  {
+    "module": "recovery",
+    "storage": "proxy",
+    "type": {
+      "Map": {
+        "hasher": "Blake2_128Concat",
+        "key": "AccountId",
+        "value": "AccountId",
+        "linked": false
+      }
+    },
+    "prefix": "0xa2ce73642c549ae79c14f0a671cf45f91809d78346727a0ef58c0fa03bafa323",
+    "generate": 100
+  },
+  {
+    "module": "vesting",
+    "storage": "vesting",
+    "type": {
+      "Map": {
+        "hasher": "Blake2_128Concat",
+        "key": "AccountId",
+        "value": "VestingInfo",
+        "linked": false
+      }
+    },
+    "prefix": "0x5f27b51b5ec208ee9cb25b55d87282435f27b51b5ec208ee9cb25b55d8728243",
+    "generate": 4000
+  },
+  {
+    "module": "scheduler",
+    "storage": "agenda",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "BlockNumber",
+        "value": "Vec<Option<Scheduled>>",
+        "linked": false
+      }
+    },
+    "prefix": "0x3db7a24cfdc9de785974746c14a99df91643f5419718219c95679ddd2d825574",
+    "generate": 0
+  },
+  {
+    "module": "scheduler",
+    "storage": "lookup",
+    "type": {
+      "Map": {
+        "hasher": "Twox64Concat",
+        "key": "Bytes",
+        "value": "TaskAddress",
+        "linked": false
+      }
+    },
+    "prefix": "0x3db7a24cfdc9de785974746c14a99df9891ad457bf4da54990fa84a2acb148a2",
+    "generate": 0
+  }
+]
